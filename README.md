@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 SHL Assessment Recommender
 
 <p align="center">
@@ -397,3 +398,15 @@ AI & Machine Learning Enthusiast
 Built as part of the **SHL AI Assessment Recommendation Assignment**.
 
 If you found this project interesting, feel free to ⭐ the repository.
+=======
+---
+title: Shl Assessment Recommender
+emoji: 📚
+colorFrom: purple
+colorTo: yellow
+sdk: docker
+pinned: false
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 7ca36b3bfcd2dd35fa8e11518a4c0fd428764ef7

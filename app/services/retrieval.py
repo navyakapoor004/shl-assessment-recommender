@@ -7,7 +7,7 @@ from typing import Optional
 
 import faiss
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 from app.schemas import CatalogItem
 
@@ -15,14 +15,15 @@ DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
 CATALOG_PATH = DATA_DIR / "catalog.json"
 INDEX_PATH = DATA_DIR / "catalog.faiss"
 
-EMBEDDINGS_MODEL_NAME = "all-MiniLM-L6-v2"
+# Lightweight ONNX embedding model (no torch dependency, much lower RAM usage)
+EMBEDDINGS_MODEL_NAME = "BAAI/bge-small-en-v1.5"
 
 
 class RetrievalService:
 
     def __init__(self) -> None:
         self.catalog: list[CatalogItem] = []
-        self.model: Optional[SentenceTransformer] = None
+        self.model: Optional[TextEmbedding] = None
         self.index: Optional[faiss.Index] = None
 
     # -----------------------------------------------------
@@ -40,15 +41,11 @@ class RetrievalService:
 
         print("Building FAISS index (first startup only)...")
 
-        self.model = SentenceTransformer(EMBEDDINGS_MODEL_NAME)
+        self.model = TextEmbedding(model_name=EMBEDDINGS_MODEL_NAME)
 
         texts = [self._embed_text(item) for item in self.catalog]
 
-        embeddings = self.model.encode(
-            texts,
-            normalize_embeddings=True,
-            convert_to_numpy=True
-        ).astype("float32")
+        embeddings = self._encode(texts)
 
         dim = embeddings.shape[1]
 
@@ -61,6 +58,24 @@ class RetrievalService:
         del embeddings
         del self.model
         self.model = None
+
+    # -----------------------------------------------------
+
+    def _encode(self, texts: list[str]) -> np.ndarray:
+        """Encode a list of texts into normalized float32 embeddings."""
+
+        if self.model is None:
+            self.model = TextEmbedding(model_name=EMBEDDINGS_MODEL_NAME)
+
+        vectors = list(self.model.embed(texts))
+        embeddings = np.array(vectors, dtype="float32")
+
+        # Normalize for cosine similarity (IndexFlatIP expects normalized vectors)
+        norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+        norms[norms == 0] = 1e-12
+        embeddings = embeddings / norms
+
+        return embeddings
 
     # -----------------------------------------------------
 
@@ -92,9 +107,6 @@ Duration:
         if self.index is None:
             raise RuntimeError("RetrievalService.load() must be called first.")
 
-        if self.model is None:
-            self.model = SentenceTransformer(EMBEDDINGS_MODEL_NAME)
-
         candidates = self._apply_hard_filters(
             test_type,
             level,
@@ -106,11 +118,7 @@ Duration:
 
         candidate_idx = [self.catalog.index(c) for c in candidates]
 
-        query_vec = self.model.encode(
-            [query],
-            normalize_embeddings=True,
-            convert_to_numpy=True,
-        ).astype("float32")
+        query_vec = self._encode([query])
 
         k = min(len(self.catalog), max(top_k * 3, 20))
 
