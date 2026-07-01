@@ -1,9 +1,9 @@
-"""
-One-time offline index build. Useful to pre-warm data/catalog.faiss before
-deploying, so the server's first startup is fast.
+import sys
+from pathlib import Path
 
-    python scripts/build_index.py
-"""
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(ROOT))
+
 from app.services.retrieval import retrieval_service
 
 if __name__ == "__main__":
