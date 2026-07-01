@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Java 8 (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/java-8-new/",
+    "test_type": "coding",
+    "description": "Multi-choice test that measures the knowledge of Java 8 syntax, OOP concepts, collections, exception handling, and functional programming features such as lambdas and streams. Suitable for screening Java developer candidates.",
+    "level": "mid",
+    "duration_minutes": 20,
+    "remote_testing": true
+  },
+  {
+    "name": "Core Java (Entry Level)",
+    "url": "https://www.shl.com/products/product-catalog/view/core-java-entry-level/",
+    "test_type": "coding",
+    "description": "Assesses fundamental Java programming knowledge including variables, control structures, arrays, basic OOP, and simple debugging for entry-level or graduate developer roles.",
+    "level": "entry",
+    "duration_minutes": 15,
+    "remote_testing": true
+  },
+  {
+    "name": "Java Design Patterns",
+    "url": "https://www.shl.com/products/product-catalog/view/java-design-patterns/",
+    "test_type": "coding",
+    "description": "Evaluates a candidate's understanding of common design patterns (Singleton, Factory, Observer, Strategy) as applied in Java, aimed at senior or lead developer hiring.",
+    "level": "senior",
+    "duration_minutes": 25,
+    "remote_testing": true
+  },
+  {
+    "name": "Verify Interactive - Inductive Reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-interactive-inductive-reasoning/",
+    "test_type": "cognitive",
+    "description": "Measures fluid intelligence and pattern recognition through interactive puzzles. Useful as a general cognitive screen across all job levels including technical roles.",
+    "level": "all_levels",
+    "duration_minutes": 24,
+    "remote_testing": true
+  },
+  {
+    "name": "Verify - Numerical Reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-numerical-reasoning/",
+    "test_type": "cognitive",
+    "description": "Assesses the ability to interpret numerical and statistical data, commonly used for analyst, finance, and data-driven technical roles.",
+    "level": "mid",
+    "duration_minutes": 18,
+    "remote_testing": true
+  },
+  {
+    "name": "OPQ32 - Occupational Personality Questionnaire",
+    "url": "https://www.shl.com/products/product-catalog/view/opq32-occupational-personality-questionnaire/",
+    "test_type": "personality",
+    "description": "A comprehensive workplace personality assessment covering 32 dimensions of typical behavioral style, used across all levels for culture-fit and leadership potential evaluation.",
+    "level": "all_levels",
+    "duration_minutes": 30,
+    "remote_testing": true
+  },
+  {
+    "name": "Situational Judgement Test - Technology Professionals",
+    "url": "https://www.shl.com/products/product-catalog/view/situational-judgement-test-technology-professionals/",
+    "test_type": "situational_judgement",
+    "description": "Presents realistic workplace scenarios common in software teams (deadline conflicts, code review disagreements, stakeholder communication) to assess judgement and decision-making of technical candidates.",
+    "level": "mid",
+    "duration_minutes": 20,
+    "remote_testing": true
+  },
+  {
+    "name": "Python (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/python-new/",
+    "test_type": "coding",
+    "description": "Tests core Python programming knowledge: syntax, data structures, OOP, error handling, and standard library usage for developer hiring at entry to mid level.",
+    "level": "mid",
+    "duration_minutes": 20,
+    "remote_testing": true
+  },
+  {
+    "name": "SQL (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/sql-new/",
+    "test_type": "skills",
+    "description": "Evaluates SQL query writing ability including joins, aggregations, subqueries, and schema design, relevant for backend and full-stack developer roles.",
+    "level": "mid",
+    "duration_minutes": 20,
+    "remote_testing": true
+  },
+  {
+    "name": "Full Stack Developer Simulation",
+    "url": "https://www.shl.com/products/product-catalog/view/full-stack-developer-simulation/",
+    "test_type": "coding",
+    "description": "A realistic coding simulation covering front-end (JavaScript) and back-end (Java or Python) tasks to evaluate end-to-end development capability.",
+    "level": "mid",
+    "duration_minutes": 45,
+    "remote_testing": true
+  },
+  {
+    "name": "Agile Software Development",
+    "url": "https://www.shl.com/products/product-catalog/view/agile-software-development/",
+    "test_type": "situational_judgement",
+    "description": "Measures familiarity with Agile/Scrum practices and judgement in sprint-planning and team-collaboration scenarios, for developers working in Agile environments.",
+    "level": "all_levels",
+    "duration_minutes": 15,
+    "remote_testing": true
+  },
+  {
+    "name": "Graduate 8.0 Job Focused Assessment",
+    "url": "https://www.shl.com/products/product-catalog/view/graduate-8-0-job-focused-assessment/",
+    "test_type": "behavioral",
+    "description": "A blended assessment for graduate hiring combining cognitive ability, personality, and situational judgement to predict early-career job performance.",
+    "level": "graduate",
+    "duration_minutes": 36,
+    "remote_testing": true
+  },
+  {
+    "name": "Verify - Deductive Reasoning",
+    "url": "https://www.shl.com/products/product-catalog/view/verify-deductive-reasoning/",
+    "test_type": "cognitive",
+    "description": "Assesses logical reasoning and the ability to draw sound conclusions from given information, used broadly across technical and analytical roles.",
+    "level": "all_levels",
+    "duration_minutes": 18,
+    "remote_testing": true
+  },
+  {
+    "name": "JavaScript (New)",
+    "url": "https://www.shl.com/products/product-catalog/view/javascript-new/",
+    "test_type": "coding",
+    "description": "Tests JavaScript fundamentals including DOM manipulation, async programming, closures, and ES6+ syntax for front-end or full-stack developer screening.",
+    "level": "mid",
+    "duration_minutes": 20,
+    "remote_testing": true
+  },
+  {
+    "name": "Leadership Development Report",
+    "url": "https://www.shl.com/products/product-catalog/view/leadership-development-report/",
+    "test_type": "personality",
+    "description": "Provides insight into leadership style and potential, drawing on personality data to support senior and managerial hiring or development decisions.",
+    "level": "senior",
+    "duration_minutes": 30,
+    "remote_testing": true
+  }
+]

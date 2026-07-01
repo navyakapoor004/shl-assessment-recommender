@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+data/catalog.faiss
+.pytest_cache/
+*.egg-info/
