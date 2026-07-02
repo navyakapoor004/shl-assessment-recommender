@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "traces_evaluated": 10,
+    "traces_completed_end_to_end": 10,
+    "completion_rate": "10/10",
+    "schema_compliance": "38/38",
+    "total_recommendations_returned": 55,
+    "catalog_grounding": "not measured (no catalog.json supplied)",
+    "hallucination_rate": "not measured (no catalog.json supplied)",
+    "end_of_conversation_flag_accuracy": "0/10",
+    "avg_latency_sec": 10.11,
+    "p95_latency_sec": 16.75,
+    "recall_at_10": "NOT REPORTED - no ground-truth relevance labels available in traces"
+  },
+  "traces": [
+    {
+      "trace_id": "C1",
+      "n_turns": 4,
+      "completed": true,
+      "schema_valid_turns": 4,
+      "total_response_turns": 4,
+      "recommendations_returned": 6,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        0.6880000000237487,
+        0.5779999999795109,
+        1.2339999999967404,
+        1.672000000020489
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C10",
+      "n_turns": 3,
+      "completed": true,
+      "schema_valid_turns": 3,
+      "total_response_turns": 3,
+      "recommendations_returned": 11,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        2.0,
+        2.4839999999967404,
+        8.702999999979511
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C2",
+      "n_turns": 3,
+      "completed": true,
+      "schema_valid_turns": 3,
+      "total_response_turns": 3,
+      "recommendations_returned": 3,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        11.39100000000326,
+        11.703000000037719,
+        14.14100000000326
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C3",
+      "n_turns": 5,
+      "completed": true,
+      "schema_valid_turns": 5,
+      "total_response_turns": 5,
+      "recommendations_returned": 1,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        6.5939999999827705,
+        6.6560000000172295,
+        7.671999999962281,
+        8.34299999999348,
+        13.0
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C4",
+      "n_turns": 3,
+      "completed": true,
+      "schema_valid_turns": 3,
+      "total_response_turns": 3,
+      "recommendations_returned": 6,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        11.51600000000326,
+        14.203000000037719,
+        14.35999999998603
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C5",
+      "n_turns": 3,
+      "completed": true,
+      "schema_valid_turns": 3,
+      "total_response_turns": 3,
+      "recommendations_returned": 7,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        6.6560000000172295,
+        11.577999999979511,
+        16.75
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C6",
+      "n_turns": 3,
+      "completed": true,
+      "schema_valid_turns": 3,
+      "total_response_turns": 3,
+      "recommendations_returned": 7,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        11.202999999979511,
+        13.125,
+        16.375
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C7",
+      "n_turns": 4,
+      "completed": true,
+      "schema_valid_turns": 4,
+      "total_response_turns": 4,
+      "recommendations_returned": 7,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        13.34299999999348,
+        14.360000000044238,
+        8.875,
+        8.796999999962281
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C8",
+      "n_turns": 3,
+      "completed": true,
+      "schema_valid_turns": 3,
+      "total_response_turns": 3,
+      "recommendations_returned": 2,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        6.625,
+        11.15600000001723,
+        12.5
+      ],
+      "errors": []
+    },
+    {
+      "trace_id": "C9",
+      "n_turns": 7,
+      "completed": true,
+      "schema_valid_turns": 7,
+      "total_response_turns": 7,
+      "recommendations_returned": 5,
+      "catalog_grounded": 0,
+      "catalog_ungrounded": 0,
+      "eoc_correct_final_turn": false,
+      "latencies_sec": [
+        11.64100000000326,
+        11.045999999972992,
+        6.829000000027008,
+        16.35899999999674,
+        10.702999999979511,
+        19.29700000002049,
+        20.03100000001723
+      ],
+      "errors": []
+    }
+  ]
+}
